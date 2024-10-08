@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.Scanner
 
 fun main() {
   val diamond = Diamond()
@@ -7,5 +7,6 @@ fun main() {
 class Diamond {
   init {
     printlin("Enter a positive number")
+    var number: Int = reader.nextInt()
   }
 }
