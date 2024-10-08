@@ -6,8 +6,8 @@ fun main() {
 
 class Matrix {
   init {
-    println("Enter a positive number")
     val scanner = Scanner(System.`in`)
-    var number: Int = scanner.nextInt()
+    println("Enter a positive number")
+    val number: Int = scanner.nextInt()
   }
 }
