@@ -1,10 +1,10 @@
 file name = diamond
 all: compile run
 compile :
-  kotlinc $(filename).kt -include-runtime -d $(filename).jar
+    kotlinc $(filename).kt -include-runtime -d $(filename).jar
 
 run:
-  java -jar $(filename).jar
+   java -jar $(filename).jar
 
 clean:
-  rm $(filename).jar
+   rm $(filename).jar
