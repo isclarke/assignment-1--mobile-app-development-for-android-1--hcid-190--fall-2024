@@ -6,8 +6,18 @@ fun main() {
 
 class Diamond {
   init {
-    println("Enter a positive number")
     val scanner = Scanner(System.`in`)
-    var number: Int = scanner.nextInt()
+    println("Enter a positive number")
+    val number: Int = scanner.nextInt()
+
+    val evennumber = number % 2 == 0
+
+    if (evennumber) {
+        println("that's an even number!")
+    } else {
+      println("that's an odd number!")
+    }
+
+    scanner.close()
   }
 }
