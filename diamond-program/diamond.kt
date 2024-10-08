@@ -6,7 +6,8 @@ fun main() {
 
 class Diamond {
   init {
-    printlin("Enter a positive number")
-    var number: Int = reader.nextInt()
+    println("Enter a positive number")
+    val scanner = Scanner(System.`in`)
+    var number: Int = scanner.nextInt()
   }
 }
