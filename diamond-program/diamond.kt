@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 fun main() {
-  val diamond = Diamond()
+ Diamond()
 }
 
 class Diamond {
