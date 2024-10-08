@@ -1,4 +1,4 @@
-file name = diamond
+filename = diamond
 all: compile run
 compile :
    kotlinc $(filename).kt -include-runtime -d $(filename).jar

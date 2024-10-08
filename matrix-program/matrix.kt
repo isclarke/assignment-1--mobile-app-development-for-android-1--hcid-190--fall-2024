@@ -1,4 +1,4 @@
-file name = matrix
+filename = matrix
 all: compile run
 compile :
    kotlinc $(filename).kt -include-runtime -d $(filename).jar
