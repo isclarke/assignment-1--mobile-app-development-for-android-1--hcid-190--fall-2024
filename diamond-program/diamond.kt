@@ -14,8 +14,8 @@ class Diamond {
 
     if(evennumber) {
       for(i in 0 until number - number + 1) {
-      var spaceCount: Int = number / 2 - i
-      var starPoint: Int = 1
+        var spaceCount: Int = number / 2 - i
+        var starPoint: Int = 1
 
         for(i in 1..<spaceCount) {
           print("  ")
@@ -25,9 +25,22 @@ class Diamond {
           print("  *")
           }
 
-          println(" ")
+          println("")
 
-        for()
+        for(i in 1..<number / 2 + 1) {
+          var spaceCount: Int = number / 2 - i
+          var starCount: Int = 2 * (i + 1) - 2
+
+            for(i in 0..<spaceCount) {
+              print("  ")
+            }
+
+            for(i in 0 until starCount) {
+              print(" *")
+            }
+
+            println("")
+        }
 
 
        }
