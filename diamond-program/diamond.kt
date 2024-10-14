@@ -73,7 +73,20 @@ class Diamond {
         }
        }
     } else {
-      println("that's an odd number!")
+       for(i in 0..<number / 2 + 1) {
+        var oddspaceCount: Int = number / 2 - i
+        var oddstarCount: Int = 2 * i + 1
+
+        for(i in 0..<oddspaceCount) {
+          print("  ")
+        }
+
+        for(i in 0 until oddstarCount) {
+          print("* ")
+        }
+
+        println("")
+       }
     }
 
     scanner.close()
