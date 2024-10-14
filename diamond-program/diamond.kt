@@ -42,7 +42,35 @@ class Diamond {
             println("")
         }
 
+        for(i in 0..<number / 2 - 1) {
+          var spaceCount: Int = i + 1
+          var starCount: Int = number - 2 * (i + 1)
 
+          for(i in 0..<spaceCount) {
+            print("  ")
+          }
+
+          for(i in 0 until starCount) {
+            print(" *")
+          }
+
+          println("")
+        }
+
+        for(i in 0..<number + 1) {
+          var spaceCount: Int = number / 2 - i
+          var bottomStar: Int = 1
+
+          for(i in 1..<spaceCount) {
+            print("  ")
+          }
+
+          for(i in 0 until bottomStar) {
+            print("  *")
+          }
+
+          println("")
+        }
        }
     } else {
       println("that's an odd number!")
