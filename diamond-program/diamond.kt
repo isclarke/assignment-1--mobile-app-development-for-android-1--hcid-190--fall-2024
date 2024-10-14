@@ -78,11 +78,11 @@ class Diamond {
         var oddstarCount: Int = 2 * i + 1
 
         for(i in 0..<oddspaceCount) {
-          print("  ")
+          print(" ")
         }
 
         for(i in 0 until oddstarCount) {
-          print("* ")
+          print("*")
         }
 
         println("")
