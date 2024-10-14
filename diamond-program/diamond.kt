@@ -16,6 +16,16 @@ class Diamond {
        for (i in 0 until number - number + 1) {
         var spaceCount: Int = number / 2 - i
         var starPoint: Int = 1
+
+          for (i in 1..<spaceCount) {
+            print(" ",)
+          }
+
+          for (i in 0 until starPoint) {
+            print("*")
+          }
+
+          print(" ")
        }
     } else {
       println("that's an odd number!")
