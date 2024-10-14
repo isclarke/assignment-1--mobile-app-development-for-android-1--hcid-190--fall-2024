@@ -13,19 +13,19 @@ class Diamond {
     val evennumber = number % 2 == 0
 
     if (evennumber) {
-       for (i in 0 until number - number + 1) {
-        var spaceCount: Int = number / 2 - i
-        var starPoint: Int = 1
+      for (i in 0 until number - number + 1) {
+      var spaceCount: Int = number / 2 - i
+      var starPoint: Int = 1
 
-          for (i in 1..<spaceCount) {
-            print(" ",)
+        for (i in 1..<spaceCount) {
+          print("  ")
           }
 
-          for (i in 0 until starPoint) {
-            print("*")
+        for (i in 0 until starPoint) {
+          print("  *")
           }
 
-          print(" ")
+          println(" ")
        }
     } else {
       println("that's an odd number!")
