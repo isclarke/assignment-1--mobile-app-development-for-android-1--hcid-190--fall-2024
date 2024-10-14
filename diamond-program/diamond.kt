@@ -57,7 +57,7 @@ class Diamond {
           println("")
         }
 
-        for(i in 0..<number + 1) {
+        for(i in 0..<number - number + 1) {
           var spaceCount: Int = number / 2 - i
           var bottomStar: Int = 1
 
