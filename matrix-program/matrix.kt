@@ -10,4 +10,3 @@ class Matrix {
     println("Enter a positive number")
     val number: Int = scanner.nextInt()
   }
-}
