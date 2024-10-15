@@ -11,4 +11,6 @@ class Matrix {
     val number: Int = scanner.nextInt()
     println ("Your matrix is : $number x $number")
   }
+
+  
 }
