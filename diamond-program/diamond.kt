@@ -87,8 +87,22 @@ class Diamond {
 
         println("")
        }
-    }
 
-    scanner.close()
+       for(i in 0..<number / 2) {
+        var oddspaceCount: Int = i + 1
+        var oddstarCount = number - 2 * (i + 1)
+
+        for(i in 0..<oddspaceCount) {
+          print(" ")
+        }
+
+        for(i in 0 until oddstarCount) {
+          print("*")
+        }
+
+        println("")
+        scanner.close()
+       }
+    }
   }
 }
