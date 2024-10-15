@@ -7,7 +7,9 @@ fun main() {
 class Matrix {
   init {
     val scanner = Scanner(System.`in`)
-    println("Enter a positive number")
+    println("Enter the size of your matrix")
     val number: Int = scanner.nextInt()
   }
+
+  for i in
 }
