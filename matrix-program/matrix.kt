@@ -10,7 +10,23 @@ class Matrix {
     println("Enter the size of your matrix")
     val number: Int = scanner.nextInt()
     println ("Your matrix is : $number x $number")
-  }
+    val spaces = number
 
-  
+    //Create a matrix of zeros
+    val matrix = Array(number) { IntArray(number) { 0 } }
+
+    //print the matrix with zeros
+    println("Printing matrix with deafult value:")
+    defaultMatrix(matrix)
+  }
+}
+
+fun defaultMatrix(matrix: Array<IntArray>) {
+  for(row in matrix) {
+    for(num in row) {
+      print("$num   ")
+    }
+
+    println("")
+  }
 }
