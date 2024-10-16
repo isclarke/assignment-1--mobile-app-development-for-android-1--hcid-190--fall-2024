@@ -30,3 +30,16 @@ fun defaultMatrix(matrix: Array<IntArray>) {
     println("")
   }
 }
+
+fun numberMatrix(matrix: Array<IntArray>) {
+  val size = matrix.size
+  var count: Int = 1
+  for(row in matrix) {
+    for(i in 1..size) {
+      print("$count   ")
+      count++
+    }
+  }
+
+  println("")
+}
