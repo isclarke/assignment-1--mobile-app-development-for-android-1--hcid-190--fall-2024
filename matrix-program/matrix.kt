@@ -18,6 +18,10 @@ class Matrix {
     //print the matrix with zeros
     println("Printing matrix with deafult value:")
     defaultMatrix(matrix)
+
+    //print the matrix with numbers
+    println("\n\tPrinting matrix:")
+    numberMatrix(matrix)
   }
 }
 
@@ -39,7 +43,6 @@ fun numberMatrix(matrix: Array<IntArray>) {
       print("$count   ")
       count++
     }
+    println("")
   }
-
-  println("")
 }
