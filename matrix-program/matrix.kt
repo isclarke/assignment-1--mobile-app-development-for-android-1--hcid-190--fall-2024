@@ -22,6 +22,10 @@ class Matrix {
     //print the matrix with increasing numbers
     println("\n\tPrinting matrix:")
     numberMatrix(matrix)
+
+    //print the matrix flipped
+    println("\n\tPrinting flipped matrix:")
+    swapMatrix(matrix)
   }
 }
 
@@ -44,6 +48,19 @@ fun numberMatrix(matrix: Array<IntArray>) {
     for(i in 1..size) {
       print("$count   ")
       count++
+    }
+    println("")
+  }
+}
+
+fun swapMatrix(matrix: Array<IntArray>) {
+  val size = matrix.size
+  var temp: Int
+
+  for(row in 0 until size) {
+    for(i in 0 until size) {
+      temp = (size * size) - (row * size + i)
+      print("$temp   ")
     }
     println("")
   }
