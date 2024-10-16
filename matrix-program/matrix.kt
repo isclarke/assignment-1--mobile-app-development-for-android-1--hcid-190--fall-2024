@@ -10,7 +10,6 @@ class Matrix {
     println("Enter the size of your matrix")
     val number: Int = scanner.nextInt()
     println ("Your matrix is : $number x $number")
-    val spaces = number
 
     //Create matrix array
     val matrix = Array(number) { IntArray(number) { 0 } }
