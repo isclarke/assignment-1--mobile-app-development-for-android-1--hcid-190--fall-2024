@@ -16,7 +16,7 @@ class Matrix {
     val matrix = Array(number) { IntArray(number) { 0 } }
 
     //print the matrix with zeros
-    println("\n\tPrinting matrix with deafult value:")
+    println("Printing matrix with deafult value:")
     defaultMatrix(matrix)
   }
 }
