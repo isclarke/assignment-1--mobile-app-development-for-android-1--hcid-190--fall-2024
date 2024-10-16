@@ -14,21 +14,21 @@ class Matrix {
     //Create matrix array
     val matrix = Array(number) { IntArray(number) { 0 } }
 
-    //print the matrix with zeros
+    //Print the matrix with zeros
     println("Printing matrix with deafult value:")
     defaultMatrix(matrix)
 
-    //print the matrix with increasing numbers
+    //Print the matrix with increasing numbers
     println("Printing matrix:")
     numberMatrix(matrix)
 
-    //print the matrix flipped
+    //Print the matrix flipped
     println("Printing flipped matrix:")
     swapMatrix(matrix)
   }
 }
 
-//function to get deafult matrix with zeros
+//Function to get deafult matrix with zeros
 fun defaultMatrix(matrix: Array<IntArray>) {
   for(row in matrix) {
     for(num in row) {
