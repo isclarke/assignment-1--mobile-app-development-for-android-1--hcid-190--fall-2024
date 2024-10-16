@@ -19,11 +19,11 @@ class Matrix {
     defaultMatrix(matrix)
 
     //print the matrix with increasing numbers
-    println("\n\tPrinting matrix:")
+    println("Printing matrix:")
     numberMatrix(matrix)
 
     //print the matrix flipped
-    println("\n\tPrinting flipped matrix:")
+    println("Printing flipped matrix:")
     swapMatrix(matrix)
   }
 }
