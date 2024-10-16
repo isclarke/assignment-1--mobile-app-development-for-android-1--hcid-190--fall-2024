@@ -12,11 +12,11 @@ class Matrix {
     println ("Your matrix is : $number x $number")
     val spaces = number
 
-    //Create a matrix of zeros
+    //Create matrix array
     val matrix = Array(number) { IntArray(number) { 0 } }
 
     //print the matrix with zeros
-    println("Printing matrix with deafult value:")
+    println("\n\tPrinting matrix with deafult value:")
     defaultMatrix(matrix)
   }
 }
