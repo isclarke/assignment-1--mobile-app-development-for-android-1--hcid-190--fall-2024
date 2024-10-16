@@ -19,12 +19,13 @@ class Matrix {
     println("Printing matrix with deafult value:")
     defaultMatrix(matrix)
 
-    //print the matrix with numbers
+    //print the matrix with increasing numbers
     println("\n\tPrinting matrix:")
     numberMatrix(matrix)
   }
 }
 
+//function to get deafult matrix with zeros
 fun defaultMatrix(matrix: Array<IntArray>) {
   for(row in matrix) {
     for(num in row) {
@@ -38,6 +39,7 @@ fun defaultMatrix(matrix: Array<IntArray>) {
 fun numberMatrix(matrix: Array<IntArray>) {
   val size = matrix.size
   var count: Int = 1
+
   for(row in matrix) {
     for(i in 1..size) {
       print("$count   ")
