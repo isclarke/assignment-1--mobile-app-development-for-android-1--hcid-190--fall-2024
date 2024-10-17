@@ -23,7 +23,7 @@ class Matrix {
 
     //Print the matrix with increasing numbers
     println("Printing matrix:")
-    numberMatrix(matrix)
+    numberMatrix(matrix, HIGHLIGHT, RESET)
 
     //Print the matrix flipped
     println("Printing flipped matrix:")
@@ -35,6 +35,7 @@ class Matrix {
 fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   val width = (size * size).toString().length
+  // add color of highlight and color of reset strings
   val HIGHLIGHT: String = "\u001b[33m"
   val RESET: String = "\u001b[0m"
 
@@ -47,14 +48,17 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   }
 }
 
-fun numberMatrix(matrix: Array<IntArray>) {
+fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   var count: Int = 1
   val width = (size * size).toString().length
+  // add color of highlight and color of reset strings
+  val HIGHLIGHT: String = "\u001b[33m"
+  val RESET: String = "\u001b[0m"
 
   for(row in matrix) {
     for(i in 1..size) {
-      print("${count.toString().padStart(width + 2)}")
+      print("${HIGHLIGHT}${count.toString().padStart(width + 2)}${RESET} ")
       count++
     }
     println("")
