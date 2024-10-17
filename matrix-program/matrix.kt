@@ -30,9 +30,12 @@ class Matrix {
 
 //Function to get deafult matrix with zeros
 fun defaultMatrix(matrix: Array<IntArray>) {
-  for(row in matrix) {
-    for(num in row) {
-      print("$num   ")
+  val size = matrix.size
+  val width = (size * size).toString().length
+
+ for(size in matrix) {
+    for(num in size) {
+      print("${num.toString().padStart(width + 2)}")
     }
 
     println("")
@@ -42,10 +45,11 @@ fun defaultMatrix(matrix: Array<IntArray>) {
 fun numberMatrix(matrix: Array<IntArray>) {
   val size = matrix.size
   var count: Int = 1
+  val width = (size * size).toString().length
 
   for(row in matrix) {
     for(i in 1..size) {
-      print("$count   ")
+      print("${count.toString().padStart(width + 2)}")
       count++
     }
     println("")
@@ -55,11 +59,12 @@ fun numberMatrix(matrix: Array<IntArray>) {
 fun swapMatrix(matrix: Array<IntArray>) {
   val size = matrix.size
   var temp: Int
+  val width = (size * size).toString().length
 
   for(row in 0 until size) {
     for(i in 0 until size) {
       temp = (size * size) - (row * size + i)
-      print("$temp   ")
+      print("${temp.toString().padStart(width + 2)}")
     }
     println("")
   }
