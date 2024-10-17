@@ -40,7 +40,7 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 
  for(size in matrix) {
     for(num in size) {
-      print("${num.toString().padStart(width + 2)}")
+       print("${HIGHLIGHT}${num.toString().padStart(width + 2)}${RESET} ")
     }
 
     println("")
