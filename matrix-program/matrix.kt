@@ -19,7 +19,7 @@ class Matrix {
 
     //Print the matrix with zeros
     println("Printing matrix with deafult value:")
-    defaultMatrix(matrix)
+    defaultMatrix(matrix, HIGHLIGHT, RESET)
 
     //Print the matrix with increasing numbers
     println("Printing matrix:")
@@ -32,9 +32,11 @@ class Matrix {
 }
 
 //Function to get deafult matrix with zeros
-fun defaultMatrix(matrix: Array<IntArray>) {
+fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   val width = (size * size).toString().length
+  val HIGHLIGHT: String = "\u001b[33m"
+  val RESET: String = "\u001b[0m"
 
  for(size in matrix) {
     for(num in size) {
