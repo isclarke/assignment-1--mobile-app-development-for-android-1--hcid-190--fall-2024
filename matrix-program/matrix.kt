@@ -39,8 +39,8 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val HIGHLIGHT: String = "\u001b[33m"
   val RESET: String = "\u001b[0m"
 
- for(size in matrix) {
-    for(num in size) {
+  for(size in matrix) {
+  for(num in size) {
        print("${HIGHLIGHT}${num.toString().padStart(width + 2)}${RESET} ")
     }
 
