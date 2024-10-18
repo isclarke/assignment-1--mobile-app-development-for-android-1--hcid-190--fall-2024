@@ -12,7 +12,7 @@ class Matrix {
 
     println("Enter the size of your matrix")
     val number: Int = scanner.nextInt()
-    println ("Your matrix is : $number x $number")
+    println("Your matrix is : $number x $number")
 
     //Create matrix array
     val matrix = Array(number) { IntArray(number) { 0 } }
@@ -38,7 +38,7 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val width = (size * size).toString().length
 
   for((rowIndex, row) in matrix.withIndex()) {
-    for ((columnIndex, num) in row.withIndex()) {
+    for((columnIndex, num) in row.withIndex()) {
        if (columnIndex == size - 1 - rowIndex) {
       print("${HIGHLIGHT}${num.toString().padStart(width + 2)}${RESET} ")
     }
