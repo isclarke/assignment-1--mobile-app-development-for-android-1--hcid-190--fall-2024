@@ -56,9 +56,14 @@ fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val HIGHLIGHT: String = "\u001b[33m"
   val RESET: String = "\u001b[0m"
 
-  for(row in matrix) {
-    for(i in 1..size) {
+  for((rowIndex, row) in matrix.withIndex()) {
+    for((columnIndex, i) in row.withIndex()) {
+      if(columnIndex == size - 1 - rowIndex) {
       print("${HIGHLIGHT}${count.toString().padStart(width + 2)}${RESET} ")
+      }
+      else {
+      print("${count.toString().padStart(width + 2)} ")
+      }
       count++
     }
     println("")
