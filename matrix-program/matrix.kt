@@ -38,12 +38,12 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val width = (size * size).toString().length
 
   for((rowIndex, row) in matrix.withIndex()) {
-    for((columnIndex, i) in row.withIndex()) {
-      if(columnIndex == size - 1 - rowIndex) {
-      print("${HIGHLIGHT}${size.toString().padStart(width + 2)}${RESET} ")
+    for ((columnIndex, num) in row.withIndex()) {
+       if (columnIndex == size - 1 - rowIndex) {
+      print("${HIGHLIGHT}${num.toString().padStart(width + 2)}${RESET} ")
     }
     else {
-       print("${size.toString().padStart(width + 2)} ")
+       print("${num.toString().padStart(width + 2)} ")
     }
   }
    println("")
