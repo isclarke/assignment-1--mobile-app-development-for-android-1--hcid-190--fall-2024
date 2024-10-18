@@ -58,9 +58,11 @@ fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 
   for((rowIndex, row) in matrix.withIndex()) {
     for((columnIndex, i) in row.withIndex()) {
+      //Test if the index is right to left diagonal
       if(columnIndex == size - 1 - rowIndex) {
       print("${HIGHLIGHT}${count.toString().padStart(width + 2)}${RESET} ")
       }
+      //If it's not it doesnt get a highlight
       else {
       print("${count.toString().padStart(width + 2)} ")
       }
