@@ -35,9 +35,6 @@ class Matrix {
 fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   val width = (size * size).toString().length
-  //Add color of highlight and color of reset strings
-  val HIGHLIGHT: String = "\u001b[33m"
-  val RESET: String = "\u001b[0m"
 
   for((rowIndex, row) in matrix.withIndex()) {
     for((columnIndex, i) in row.withIndex()) {
@@ -56,9 +53,6 @@ fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   var count: Int = 1
   val width = (size * size).toString().length
-  //Add color of highlight and color of reset strings
-  val HIGHLIGHT: String = "\u001b[33m"
-  val RESET: String = "\u001b[0m"
 
   for((rowIndex, row) in matrix.withIndex()) {
     for((columnIndex, i) in row.withIndex()) {
