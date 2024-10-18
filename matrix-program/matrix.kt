@@ -27,7 +27,7 @@ class Matrix {
 
     //Print the matrix flipped
     println("Printing flipped matrix:")
-    swapMatrix(matrix)
+    swapMatrix(matrix, HIGHLIGHT, RESET)
   }
 }
 
@@ -39,13 +39,17 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val HIGHLIGHT: String = "\u001b[33m"
   val RESET: String = "\u001b[0m"
 
-  for(size in matrix) {
-  for(num in size) {
-       print("${HIGHLIGHT}${num.toString().padStart(width + 2)}${RESET} ")
+  for((rowIndex, row) in matrix.withIndex()) {
+    for((columnIndex, i) in row.withIndex()) {
+      if(columnIndex == size - 1 - rowIndex) {
+      print("${HIGHLIGHT}${size.toString().padStart(width + 2)}${RESET} ")
     }
-
-    println("")
+    else {
+       print("${size.toString().padStart(width + 2)} ")
+    }
   }
+   println("")
+}
 }
 
 fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
@@ -72,16 +76,22 @@ fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   }
 }
 
-fun swapMatrix(matrix: Array<IntArray>) {
+fun swapMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   var temp: Int
   val width = (size * size).toString().length
 
-  for(row in 0 until size) {
-    for(i in 0 until size) {
-      temp = (size * size) - (row * size + i)
-      print("${temp.toString().padStart(width + 2)}")
+  for((rowIndex, row) in matrix.withIndex()) {
+    for((columnIndex, i) in row.withIndex()) {
+      temp = (size * size) - (rowIndex * size + columnIndex)
+
+      if(columnIndex == size - 1 - rowIndex) {
+        print("${HIGHLIGHT}${temp.toString().padStart(width + 2)}${RESET} ")
     }
-    println("")
+    else {
+       print("${temp.toString().padStart(width + 2)} ")
+    }
   }
+  println("")
+}
 }
