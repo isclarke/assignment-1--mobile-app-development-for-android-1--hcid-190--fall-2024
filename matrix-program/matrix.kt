@@ -34,6 +34,7 @@ class Matrix {
 //Function to get deafult matrix with zeros
 fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
+  //Width value used to get perfect spacing
   val width = (size * size).toString().length
 
   for((rowIndex, row) in matrix.withIndex()) {
@@ -52,6 +53,7 @@ fun defaultMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
   var count: Int = 1
+  //Width value used to get perfect spacing
   val width = (size * size).toString().length
 
   for((rowIndex, row) in matrix.withIndex()) {
@@ -72,7 +74,9 @@ fun numberMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 
 fun swapMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
   val size = matrix.size
+  //Create temp variable
   var temp: Int
+  //Width value used to get perfect spacing
   val width = (size * size).toString().length
 
   for((rowIndex, row) in matrix.withIndex()) {
