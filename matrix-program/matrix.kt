@@ -88,7 +88,6 @@ fun swapMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
     }
     else {
        print("${temp.toString().padStart(width + 2)} ")
-    }
   }
   println("")
 }
