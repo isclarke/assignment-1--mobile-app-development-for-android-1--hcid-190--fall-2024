@@ -91,9 +91,9 @@ fun swapMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 
         if(swapColumnIndex != rowIndex) {
            print("${temp.toString().padStart(width + 2)} ")
+        } else {
+           print("${(size * size) - (swapRowIndex * size + swapColumnIndex)}".padStart(width + 2) + " ")
         }
-
-       print("${temp.toString().padStart(width + 2)} ")
     }
   }
   println("")
