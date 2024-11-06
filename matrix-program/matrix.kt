@@ -85,8 +85,14 @@ fun swapMatrix(matrix: Array<IntArray>, HIGHLIGHT: String, RESET: String) {
 
       if(columnIndex == size - 1 - rowIndex) {
         print("${HIGHLIGHT}${temp.toString().padStart(width + 2)}${RESET} ")
-    }
-    else {
+    } else {
+      val swapRowIndex = rowIndex
+      val swapColumnIndex = size - 1 - columnIndex
+
+        if(swapColumnIndex != rowIndex) {
+           print("${temp.toString().padStart(width + 2)} ")
+        }
+
        print("${temp.toString().padStart(width + 2)} ")
     }
   }
